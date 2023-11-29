@@ -9,7 +9,7 @@ import {HiDownload} from "react-icons/hi"
 
 const Intro = () => {
   return (
-    <section>
+    <section id="home" className='scroll-mt-28'>
       <div className='flex flex-col space-y-10 justify-center  items-center '>
         <div className='relative'>
             <motion.div

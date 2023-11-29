@@ -1,10 +1,13 @@
 "use client"
 
-import React from 'react';
+import React, { useContext} from 'react';
 import {motion} from "framer-motion";
 import { links } from '@/lib/data';
 import Link from 'next/link';
+import { useActiveSectionHook } from '@/context/activeSection';
 const Header = () => {
+const activeSection=useActiveSectionHook();
+const { activestate,setActiveState }=activeSection
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -17,7 +20,7 @@ const Header = () => {
       </motion.div>
 
       <nav className='flex fixed left-1/2 top-[0.15rem] h-12 -translate-x-1/2 sm:top-[2rem] sm:h-[initial] sm:py-0 py-2 '>
-        <ul className='flex sm:gap-x-10 gap-x-[0.80rem] items-center justify-between font-medium text-sm text-gray-500 sm:flex-nowrap '>
+        <ul className='flex gap-x-8 sm:gap-x-10  items-center justify-between font-medium text-sm text-gray-500 sm:flex-nowrap '>
 
               {links.map((val)=>(
                 <motion.li 
@@ -26,9 +29,17 @@ const Header = () => {
                 animate={{y:0,x:"",opacity:1}}
                 transition={{ duration:0.2}}
                 key={val.name}>
+                  <div className={`  rounded-lg  ${activestate === val.name && "text-gray-900 bg-gray-100"}`}>
+
                    <Link 
-                   className='flex items-center justify-center py-2  sm:px-0 hover:bg-gray-300/50 hover:text-gray-900 rounded-lg  transition w-full active:text-gray-900'
-                   href={val.hash}>{val.name}</Link> 
+                   className={`flex items-center justify-center py-2  sm:p-2  hover:text-gray-900 rounded-lg  transition w-full active:text-gray-900 ${activestate === val.name && "text-gray-900 bg-gray-100/80"}` }
+                   href={val.hash}
+                   onClick={()=>setActiveState(val.name)}
+                   >
+                    
+                    {val.name}
+                   </Link> 
+                  </div>
                     </motion.li>
               ))}
         </ul>
