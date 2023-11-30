@@ -2,13 +2,22 @@
 
 import React from 'react';
 import {motion} from "framer-motion"
+import SectionViewHook from './inViewSection';
+
+
+
 const About = () => {
+
+  const { ref } =SectionViewHook("About",0.3);
+
+
   return (
     <motion.section 
     initial={{ opacity: 0, y: 100 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ delay: 0.175 }}
     id="about"
+    ref={ref}
     className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
     >
     <h2 className='text-2xl font-bold text-gray-600 font-sans mb-7'>About me</h2>

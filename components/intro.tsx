@@ -1,15 +1,26 @@
 "use client"
 import Image from 'next/image';
-import React from 'react';
+import React  from 'react';
 import {motion } from "framer-motion"
 import { Button } from './ui/button';
 import Link from 'next/link';
 import {BsArrowRight, BsGithub, BsLinkedin} from "react-icons/bs"
 import {HiDownload} from "react-icons/hi"
+import SectionViewHook from './inViewSection';
+
+
+
+
 
 const Intro = () => {
+
+const { ref } =SectionViewHook("Home");
+ 
+  
+
+
   return (
-    <section id="home" className='scroll-mt-28'>
+    <section ref={ref} id="home" className='scroll-mt-28'>
       <div className='flex flex-col space-y-10 justify-center  items-center '>
         <div className='relative'>
             <motion.div
