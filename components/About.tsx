@@ -3,6 +3,7 @@
 import React from 'react';
 import {motion} from "framer-motion"
 import SectionViewHook from './inViewSection';
+import Heading from './Heading';
 
 
 
@@ -18,9 +19,9 @@ const About = () => {
     transition={{ delay: 0.175 }}
     id="about"
     ref={ref}
-    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+    className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 dark:text-gray-300"
     >
-    <h2 className='text-2xl font-bold text-gray-600 font-sans mb-7'>About me</h2>
+    <Heading>About me</Heading>      
       <p>
       While graduating , I decided to pursue my
         passion for programming. I enrolled in a course and learned{" "}

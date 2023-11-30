@@ -29,10 +29,10 @@ export default function Project({
         opacity:opacity
     }}
     ref={ref} 
-    className=' border p-4 sm:flex  my-5 justify-center items-center shadow-xl max-w-[42rem] sm:h-[25rem] relative  overflow-hidden  '>
+    className=' border p-4 sm:flex text-gray-700 dark:text-gray-200 my-5 justify-center items-center shadow-xl max-w-[42rem] sm:h-[25rem] relative  overflow-hidden  '>
         <div className='flex flex-col items-start space-y-8 sm:max-w-[50%]'>
             <h3 className='text-2xl font-medium hover:text-gray-700 flex items-center justify-center gap-1'><a href="https://github.com/Vardhan1342"  target="_blank" rel="noopener noreferrer">{title}</a><VscGoToFile className="mt-2" size={10}/></h3>
-            <p className='text-gray-700 text-sm'>
+            <p className=' text-sm'>
                 {description}
             </p>
             <ul className='flex gap-x-4 flex-wrap '>

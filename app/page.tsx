@@ -1,5 +1,7 @@
 import About from '@/components/About'
+import Contact from '@/components/Contact'
 import Projects from '@/components/Projects'
+import Skills from '@/components/Skills'
 import Intro from '@/components/intro'
 import Sectiondivider from '@/components/sectiondivider'
 import Image from 'next/image'
@@ -11,8 +13,9 @@ export default function Home() {
              <Sectiondivider />
              <About />
              <Projects />
-             <Sectiondivider />
-
+    
+            <Skills />
+            <Contact />
            </main>
   )
 }

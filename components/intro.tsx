@@ -7,12 +7,15 @@ import Link from 'next/link';
 import {BsArrowRight, BsGithub, BsLinkedin} from "react-icons/bs"
 import {HiDownload} from "react-icons/hi"
 import SectionViewHook from './inViewSection';
+import { useActiveSectionHook } from '@/context/activeSection';
 
 
 
 
 
 const Intro = () => {
+  const activeSection=useActiveSectionHook();
+const { activestate,setActiveState }=activeSection
 
 const { ref } =SectionViewHook("Home");
  
@@ -67,7 +70,8 @@ const { ref } =SectionViewHook("Home");
         initial={{opacity:0,y:100}}
         animate={{opacity:1,y:0}}
         className='flex gap-2 flex-wrap justify-center flex-col sm:flex-row'>
-            <Button className='rounded-full hover:scale-105 transition' >
+            <Button className='rounded-full hover:scale-105 transition dark:text-gray-900 dark:font-semibold dark:bg-gray-200' 
+            onClick={()=>{setActiveState("Contact")}}>
                 <Link href="#contact" className='flex items-center justify-center gap-2'> 
                   <p>Contact me here</p>
                  <BsArrowRight />
