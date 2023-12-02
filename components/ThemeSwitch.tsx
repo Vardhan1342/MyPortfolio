@@ -41,7 +41,7 @@ const ThemeSwitch = () => {
     className='fixed w-[3rem] h-[3rem] bottom-5 right-5 border border-white/40 rounded-full backdrop-blur-[0.5rem] bg-opacity-80 flex items-center justify-center shadow-xl hover:scale-110 transition-all'
     onClick={toggleMode}
     >
-     {theme === "light" ? <BsSun size={20} /> : <BsMoon size={20}/>}
+     {theme === "light" ?  <BsMoon size={20}/> : <BsSun size={20} /> }
     </button> 
   );
 }
