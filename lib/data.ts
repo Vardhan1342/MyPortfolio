@@ -35,6 +35,8 @@ export const projectsData = [
       "Explore a new era of photo-sharing on Sociopedia, your dedicated social platform where simplicity meets creativity – share moments, connect, and express yourself through captivating visuals",
     tags: ["React", "MongoDB", "Tailwind","Redux"],
     imageUrl: sociopedia,
+    visiturl:"https://github.com/Vardhan1342/Sociopedia-Frontend.git",
+    code:"https://github.com/Vardhan1342/Sociopedia-Frontend.git"
   },
   {
     title: "Saas AI Platform",
@@ -42,6 +44,8 @@ export const projectsData = [
       "Elevate creativity and efficiency with our all-in-one SAAS AI platform, offering seamless text-to-image, text-to-video, and text-to-music capabilities  unlocking a world of possibilities at your fingertips.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "ZusStand","Prisma","Stripe"],
     imageUrl: AIplatform,
+    visiturl:"https://ai-saas-platform-sb4k.vercel.app/",
+    code:"https://github.com/Vardhan1342/AI-saas-platform.git"
   },
   {
     title: "Promptops",
@@ -49,6 +53,8 @@ export const projectsData = [
       "Discover endless inspiration on our Promtops website, your go-to source for the latest and most captivating prompts – fueling creativity and sparking innovation with every visit.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind"],
     imageUrl: prompts,
+    visiturl:"https://promptops.vercel.app/",
+    code:"https://github.com/Vardhan1342/ai-prompts.git"
   },
 ] as const;
 

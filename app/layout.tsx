@@ -10,8 +10,8 @@ import ThemeSwitch from '@/components/ThemeSwitch'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sri Vardhan | Portfolio',
-  description: 'Sri Vardhan a full-stack developer',
+  title: 'Sri Vardhan | Full-Stack Developer Portfolio ',
+  description: 'Explore Sri Vardhan\'s extensive portfolio showcasing expertise in JavaScript, React, Node.js, and more. Discover innovative web development projects and solutions crafted by this dedicated full-stack developer.',
 }
 
 export default function RootLayout({
