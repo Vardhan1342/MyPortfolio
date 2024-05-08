@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import AIplatform from "@/public/AIplatform.png";
 import sociopedia from "@/public/sociopedia.jpg";
 import prompts from "@/public/prompts.png";
+import devfinder from "@/public/devfinder.png";
 
 export const links = [
   {
@@ -30,13 +31,13 @@ export const links = [
 ] as const;
 export const projectsData = [
   {
-    title: "Sociopedia",
+    title: "Dev-Xp",
     description:
-      "Explore a new era of photo-sharing on Sociopedia, your dedicated social platform where simplicity meets creativity – share moments, connect, and express yourself through captivating visuals",
-    tags: ["React", "MongoDB", "Tailwind","Redux"],
-    imageUrl: sociopedia,
-    visiturl:"https://github.com/Vardhan1342/Sociopedia-Frontend.git",
-    code:"https://github.com/Vardhan1342/Sociopedia-Frontend.git"
+      "Innovated a platform for real-time collaboration among developers, facilitating seamless pairing for joint coding projects. Key contributions include room creation, video streaming, and chat features. Empowered global developer community, enhancing productivity and fostering collaboration culture. Led future development initiatives, including code version control integration and mobile platform expansion.",
+    tags: ["Nextjs", "MongoDB", "Tailwind","Node js","TypeScript"],
+    imageUrl: devfinder,
+    visiturl:"https://dev-finder-ruby-six.vercel.app/",
+    code:"https://github.com/Vardhan1342/dev-finder"
   },
   {
     title: "Saas AI Platform",
@@ -55,6 +56,15 @@ export const projectsData = [
     imageUrl: prompts,
     visiturl:"https://promptops.vercel.app/",
     code:"https://github.com/Vardhan1342/ai-prompts.git"
+  },
+  {
+    title: "Sociopedia",
+    description:
+      "Explore a new era of photo-sharing on Sociopedia, your dedicated social platform where simplicity meets creativity – share moments, connect, and express yourself through captivating visuals",
+    tags: ["React", "MongoDB", "Tailwind","Redux"],
+    imageUrl: sociopedia,
+    visiturl:"https://github.com/Vardhan1342/Sociopedia-Frontend.git",
+    code:"https://github.com/Vardhan1342/Sociopedia-Frontend.git"
   },
 ] as const;
 
